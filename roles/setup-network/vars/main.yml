@@ -10,5 +10,3 @@ network_version: mainnet-v1
 # node type
 # options: sentry/sentry, sentry/validator, without-sentry
 node_type: sentry/sentry
-# startup environment variables
-startup_variables: variables.env

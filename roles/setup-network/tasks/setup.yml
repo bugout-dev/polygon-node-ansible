@@ -12,7 +12,7 @@
   command: cp -rf {{ ansible_env.HOME }}/launch/{{ network_version }}/{{ node_type }} {{ ansible_env.HOME }}/node
 
 - name: Copy node startup environment variables
-  command: cp {{ ansible_env.HOME }}/launch/{{ network_version }}/{{ startup_variables }} {{ ansible_env.HOME }}/node/{{ startup_variables }}
+  command: cp {{ ansible_env.HOME }}/launch/{{ network_version }}/variables.env {{ ansible_env.HOME }}/node/variables.env
 
 - name: Setup Heidmall
   command: "chdir={{ ansible_env.HOME }}/node/heimdall {{ item }}"
